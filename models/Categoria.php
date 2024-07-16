@@ -17,4 +17,11 @@ class Categoria extends ActiveRecord {
         $this->nombre = $args['nombre'] ?? '';
         $this->estado = $args['estado'] ?? '';
     }
+
+    public static function generarCodigo() {
+        $query = "SELECT IFNULL(MAX(codigo), 0) FROM " . static::$tabla;
+        $resultado = self::$db->query($query);
+        $codigo = $resultado->fecth_array();
+        return array_shift($codigo);
+    }
 }
