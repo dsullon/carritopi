@@ -1,0 +1,49 @@
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra img {
+    height: 50px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navegacion a {
+    font-family: var(--fuenteSecundaria);
+    color: var(--rojo);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navegacion a:hover {
+    color: var(--blanco);
+    background-color: var(--rojo);
+    border-radius: 5px;
+}
+
+/* NOT FOUND*/
+.notfound {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound-imagen {
+    width: 25rem;
+    height: auto;
+}

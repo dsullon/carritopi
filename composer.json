@@ -1,0 +1,14 @@
+{
+    "name": "dsullon/carrito_dep",
+    "description": "Proyecto carrito de compras del curso de Diseño de proyectos",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "./",
+            "Controllers\\": "./controllers",
+            "Models\\": "./models"
+        }
+    }
+}
